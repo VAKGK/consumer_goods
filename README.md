@@ -58,4 +58,12 @@ I addressed 10 distinct business questions posed by the management team:
 ## ⚙️ The Workflow
 
 ```mermaid
-graph TD
+graph TD;
+    A["❓ Management Request\n(10 Ad-Hoc Questions)"] -->|SQL Scripting| B{"🐬 MySQL Database\nQuery Execution"};
+    B -->|Data Extraction| C["📊 Power BI\nData Modeling & DAX"];
+    C -->|Visualization| D["📈 Insights Dashboard\n(Charts & Matrices)"];
+    D -->|Presentation| E["💡 Final Report\nPowerPoint"];
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style E fill:#bfb,stroke:#333,stroke-width:2px
